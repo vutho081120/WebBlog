@@ -32,7 +32,7 @@ class PostController extends Controller
         $validator = Validator::make($request->all(), [
             'postTitle' => 'required|min:3',
             'postContent' => 'required|min:3',
-            'postImage' => 'required|mimes:jpeg,jpg,png,gif,svg',
+            'postImage' => 'required|mimes:jpeg,jpg,png,gif,svg,webp',
         ], [
             'postTitle.required' => 'You have not entered your post title',
             'postTitle.min' => 'Post title must be at least 3 characters long',
@@ -86,7 +86,7 @@ class PostController extends Controller
 
         $validator = Validator::make($request->all(), [
             'postContent' => 'required|min:3',
-            'postImage' => 'mimes:jpeg,jpg,png,gif,svg',
+            'postImage' => 'mimes:jpeg,jpg,png,gif,svg,webp',
         ], [
             'postContent.required' => 'You have not entered your post content',
             'postContent.min' => 'Post content must be at least 3 characters long',

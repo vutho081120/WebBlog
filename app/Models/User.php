@@ -56,7 +56,7 @@ class User extends Authenticatable
 
     public function userCheck($phone)
     {
-        return $this::where('phone', $phone)->first();;
+        return $this::where('phone', $phone)->first();
     }
 
     public function userSearch($keyword)

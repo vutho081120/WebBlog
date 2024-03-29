@@ -1,18 +1,17 @@
+<!-- Category News -->
 <div class="blw-category-news">
-    <!-- zone box -->
-    <div class="box1">
-        <!-- the loai tin tuc -->
-
+    <div class="boxLeft">
         <div class="content3">
             <div class="title">
-                <h2>THỜI SỰ</h2>
+                <h2>STAR</h2>
             </div>
 
             <div class="content__main">
-                <img src="images/Site/index/content/content3/anh1.png" alt="">
+                <img src="images\Admin\Posts\<?php echo e($postWithCategoryStar[0]->post_image); ?>" alt="">
                 <a href="">
                     <h3>
-                        Triệt phá ổ mại dâm núp bóng quán cà phê do ông "trùm" U60 cầm đầu
+                        <?php echo e($postWithCategoryStar[0]->post_title); ?>
+
                     </h3>
                 </a>
             </div>
@@ -20,16 +19,17 @@
             <div class="content__extra">
                 <ul>
                     <li>
-                        <img src="images/Site/index/content/content3/anh2.png" alt="">
+                        <img src="images\Admin\Posts\<?php echo e($postWithCategoryStar[1]->post_image); ?>" alt="">
                         <h4>
-                            Cách chức Trưởng công an xã vào nhà nghỉ với vợ bạn thân
+                            <?php echo e($postWithCategoryStar[1]->post_title); ?>
+
                         </h4>
                     </li>
                     <li>
-                        <img src="images/Site/index/content/content3/anh3.png" alt="">
+                        <img src="images\Admin\Posts\<?php echo e($postWithCategoryStar[2]->post_image); ?>" alt="">
                         <h4>
-                            Vĩnh Long: Bé gái 4 tuổi bị bạn của bố dùng tay đánh đập xuống
-                            nền...
+                            <?php echo e($postWithCategoryStar[2]->post_title); ?>
+
                         </h4>
                     </li>
                 </ul>
@@ -37,19 +37,20 @@
         </div>
     </div>
 
-    <div class="box2">
+    <div class="boxRight">
         <!-- the loai tin tuc -->
 
         <div class="content3">
             <div class="title">
-                <h2>THỜI SỰ</h2>
+                <h2>MUSIK</h2>
             </div>
 
             <div class="content__main">
-                <img src="images/Site/index/content/content3/anh1.png" alt="">
+                <img src="images\Admin\Posts\<?php echo e($postWithCategoryMusik[0]->post_image); ?>" alt="">
                 <a href="">
                     <h3>
-                        Triệt phá ổ mại dâm núp bóng quán cà phê do ông "trùm" U60 cầm đầu
+                        <?php echo e($postWithCategoryMusik[0]->post_title); ?>
+
                     </h3>
                 </a>
             </div>
@@ -57,90 +58,17 @@
             <div class="content__extra">
                 <ul>
                     <li>
-                        <img src="images/Site/index/content/content3/anh2.png" alt="">
+                        <img src="images\Admin\Posts\<?php echo e($postWithCategoryMusik[1]->post_image); ?>" alt="">
                         <h4>
-                            Cách chức Trưởng công an xã vào nhà nghỉ với vợ bạn thân
+                            <?php echo e($postWithCategoryMusik[1]->post_title); ?>
+
                         </h4>
                     </li>
                     <li>
-                        <img src="images/Site/index/content/content3/anh3.png" alt="">
+                        <img src="images\Admin\Posts\<?php echo e($postWithCategoryMusik[2]->post_image); ?>" alt="">
                         <h4>
-                            Vĩnh Long: Bé gái 4 tuổi bị bạn của bố dùng tay đánh đập xuống
-                            nền...
-                        </h4>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                            <?php echo e($postWithCategoryMusik[2]->post_title); ?>
 
-    <div class="box3">
-        <!-- the loai tin tuc -->
-
-        <div class="content3">
-            <div class="title">
-                <h2>THỜI SỰ</h2>
-            </div>
-
-            <div class="content__main">
-                <img src="images/Site/index/content/content3/anh1.png" alt="">
-                <a href="">
-                    <h3>
-                        Triệt phá ổ mại dâm núp bóng quán cà phê do ông "trùm" U60 cầm đầu
-                    </h3>
-                </a>
-            </div>
-
-            <div class="content__extra">
-                <ul>
-                    <li>
-                        <img src="images/Site/index/content/content3/anh2.png" alt="">
-                        <h4>
-                            Cách chức Trưởng công an xã vào nhà nghỉ với vợ bạn thân
-                        </h4>
-                    </li>
-                    <li>
-                        <img src="images/Site/index/content/content3/anh3.png" alt="">
-                        <h4>
-                            Vĩnh Long: Bé gái 4 tuổi bị bạn của bố dùng tay đánh đập xuống
-                            nền...
-                        </h4>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="box4">
-        <!-- the loai tin tuc -->
-
-        <div class="content3">
-            <div class="title">
-                <h2>THỜI SỰ</h2>
-            </div>
-
-            <div class="content__main">
-                <img src="images/Site/index/content/content3/anh1.png" alt="">
-                <a href="">
-                    <h3>
-                        Triệt phá ổ mại dâm núp bóng quán cà phê do ông "trùm" U60 cầm đầu
-                    </h3>
-                </a>
-            </div>
-
-            <div class="content__extra">
-                <ul>
-                    <li>
-                        <img src="images/Site/index/content/content3/anh2.png" alt="">
-                        <h4>
-                            Cách chức Trưởng công an xã vào nhà nghỉ với vợ bạn thân
-                        </h4>
-                    </li>
-                    <li>
-                        <img src="images/Site/index/content/content3/anh3.png" alt="">
-                        <h4>
-                            Vĩnh Long: Bé gái 4 tuổi bị bạn của bố dùng tay đánh đập xuống
-                            nền...
                         </h4>
                     </li>
                 </ul>

@@ -70,6 +70,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'App\Http\Controllers\Admin', 
 Route::group(['namespace' => 'App\Http\Controllers\Site'], function () {
     Route::get('home', 'HomeController@index')->name('site.home.index');
 
+    Route::get('category/{slug}', 'CategoryController@index')->name('site.category.index');
+
     Route::get('logout', 'AccountController@logout')->name('site.account.logout');
 
     Route::group(['middleware' => 'CheckAccount'], function () {

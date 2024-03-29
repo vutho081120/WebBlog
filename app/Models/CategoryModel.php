@@ -18,7 +18,7 @@ class CategoryModel extends Model
 
     public function categoryCheck($categoryName)
     {
-        return $this::where('category_name', $categoryName)->first();;
+        return $this::where('category_name', $categoryName)->first();
     }
 
     public function getCategoryById($id)
@@ -40,5 +40,10 @@ class CategoryModel extends Model
     public function getCategoryNames()
     {
         return $this::where('category_status', 1)->select('id', 'category_name')->get();
+    }
+
+    public function getCategoryList()
+    {
+        return $this::where('category_status', 1)->get();
     }
 }

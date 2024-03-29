@@ -1,3 +1,4 @@
+<!-- Page Header -->
 <div class="mainMenu">
     <!-- menu -->
 
@@ -13,8 +14,13 @@
                 <li>
                     <a href="#">Danh mục</a>
                     <ul class="sub-menu">
-                        <li><a href="#">Video</a></li>
-                        <li><a href="#">Video</a></li>
+                        @foreach ($categoryList as $category)
+                            <li>
+                                <a href="{{ route('site.category.index', Str::slug($category->category_name)) }}">
+                                    {{ $category->category_name }}
+                                </a>
+                            </li>
+                        @endforeach
                     </ul>
                 </li>
                 <li>

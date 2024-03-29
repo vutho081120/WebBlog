@@ -43,13 +43,7 @@
                 <div class="w1040">
                     <div class="w720 bwc-left fl">
                         <div class="bwc-left-wrapper">
-                            @yield('RegionNews')
-
-                            @yield('StreamNews')
-
-                            @yield('TableNews')
-
-                            @yield('CategoryNews')
+                            @yield('PageBody')
                         </div>
                     </div>
                 </div>

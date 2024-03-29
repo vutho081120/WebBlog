@@ -1,16 +1,15 @@
+<!-- Box Video -->
 <div class="bns-box-video">
-    <!-- box video -->
-
     <div class="content5">
         <div class="content__left">
             <video controls="controls" width="100%" height="100%">
-                <source src="videos/Site/mutex/tam-tin-toi.mp4" type="video/mp4" />
+                <source src="{{ asset('videos/Site/mutex/tam-tin-toi.mp4') }}" type="video/mp4" />
             </video>
         </div>
 
         <div class="content__right">
             <div class="title">
-                <img src="images/Site/index/content/content5/music-icon.png" alt="">
+                <img src="{{ asset('images/Site/index/content/content5/music-icon.png') }}" alt="">
                 <span>Mutex</span>
             </div>
 
@@ -18,7 +17,7 @@
                 <ul>
                     <li>
                         <a href="">
-                            <span class="img"><img src="images/Site/index/content/content5/anh1.png"
+                            <span class="img"><img src={{ asset('images/Site/index/content/content5/anh1.png') }}
                                     alt=""></span>
                             <div>
                                 <span class="ct">Sóc Sơn: Cháy chợ lớn, 1000 mét vuông
@@ -29,7 +28,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="img"><img src="images/Site/index/content/content5/anh1.png"
+                            <span class="img"><img src={{ asset('images/Site/index/content/content5/anh1.png') }}
                                     alt=""></span>
                             <div>
                                 <span class="ct">Bảo Thi: Tiền thu nhạc chuông, nhạc chờ
@@ -40,7 +39,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="img"><img src="images/Site/index/content/content5/anh1.png"
+                            <span class="img"><img src={{ asset('images/Site/index/content/content5/anh1.png') }}
                                     alt=""></span>
                             <div>
                                 <span class="ct">Kim Woo Bin: đã bình phục trở lại sau 1
@@ -52,7 +51,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="img"><img src="images/Site/index/content/content5/anh1.png"
+                            <span class="img"><img src={{ asset('images/Site/index/content/content5/anh1.png') }}
                                     alt=""></span>
                             <div>
                                 <span class="ct">Khi vợ cấm xem Woldcup thì ...</span>
@@ -62,7 +61,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="img"><img src="images/Site/index/content/content5/anh1.png"
+                            <span class="img"><img src={{ asset('images/Site/index/content/content5/anh1.png') }}
                                     alt=""></span>
                             <div>
                                 <span class="ct">Hưng Yên: Hai cô gái tử vong trên cầu
@@ -73,7 +72,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="img"><img src="images/Site/index/content/content5/anh1.png"
+                            <span class="img"><img src={{ asset('images/Site/index/content/content5/anh1.png') }}
                                     alt=""></span>
                             <div>
                                 <span class="ct">Đến hẹn lại lên, gà YG lại bị KBS "cấm

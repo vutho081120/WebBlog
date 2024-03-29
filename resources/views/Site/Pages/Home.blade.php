@@ -8,15 +8,11 @@
     @include('Site.Components.PageHeader')
 @endsection
 
-@section('RegionNews')
+@section('PageBody')
     @include('Site.Components.RegionNews')
-@endsection
 
-@section('StreamNews')
     @include('Site.Components.StreamNews')
-@endsection
 
-@section('CategoryNews')
     @include('Site.Components.CategoryNews')
 @endsection
 

@@ -12,6 +12,7 @@
     <link href="<?php echo e(asset('css/Admin/tabler-vendors.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('css/Admin/demo.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('css/Admin/main.css')); ?>" rel="stylesheet">
+    <?php echo $__env->yieldContent('AlertifyCss'); ?>
     
     <style>
         @import url('https://rsms.me/inter/inter.css');

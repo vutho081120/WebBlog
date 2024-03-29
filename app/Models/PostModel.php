@@ -37,4 +37,37 @@ class PostModel extends Model
             ->orWhere('post_content', 'like', '%' . $keyword . '%')
             ->paginate(1);
     }
+
+    public function getPostTopFocus()
+    {
+        return $this::select('id', 'post_title', 'post_image')->take(9)->get();
+    }
+
+    public function getLatestPosts()
+    {
+        return $this::select('posts.id', 'posts.post_title', 'posts.post_image', 'posts.created_at', 'categories.category_name')
+            ->join('categories', 'posts.category_id', '=', 'categories.id')
+            ->latest()->limit(21)
+            ->get();
+    }
+
+    public function getPostWithCategory($id, $number)
+    {
+        return $this::select('id', 'post_title', 'post_image', 'created_at')
+            ->where('category_id', '=', $id)
+            ->take($number)->get();
+    }
+
+    public function getLatestPostTable()
+    {
+        return $this::select('posts.id', 'posts.post_title', 'posts.created_at')
+            ->join('categories', 'posts.category_id', '=', 'categories.id')
+            ->latest()->limit(10)
+            ->get();
+    }
+
+    public function getPostFocus()
+    {
+        return $this::select('id', 'post_title', 'post_image')->take(5)->get();
+    }
 }

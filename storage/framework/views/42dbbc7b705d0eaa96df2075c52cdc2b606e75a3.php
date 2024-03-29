@@ -1,3 +1,4 @@
+<!-- Page Header -->
 <div class="mainMenu">
     <!-- menu -->
 
@@ -13,8 +14,14 @@
                 <li>
                     <a href="#">Danh mục</a>
                     <ul class="sub-menu">
-                        <li><a href="#">Video</a></li>
-                        <li><a href="#">Video</a></li>
+                        <?php $__currentLoopData = $categoryList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <li>
+                                <a href="<?php echo e(route('site.category.index', Str::slug($category->category_name))); ?>">
+                                    <?php echo e($category->category_name); ?>
+
+                                </a>
+                            </li>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </ul>
                 </li>
                 <li>

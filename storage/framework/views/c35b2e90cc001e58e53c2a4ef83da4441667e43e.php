@@ -43,13 +43,7 @@
                 <div class="w1040">
                     <div class="w720 bwc-left fl">
                         <div class="bwc-left-wrapper">
-                            <?php echo $__env->yieldContent('RegionNews'); ?>
-
-                            <?php echo $__env->yieldContent('StreamNews'); ?>
-
-                            <?php echo $__env->yieldContent('TableNews'); ?>
-
-                            <?php echo $__env->yieldContent('CategoryNews'); ?>
+                            <?php echo $__env->yieldContent('PageBody'); ?>
                         </div>
                     </div>
                 </div>

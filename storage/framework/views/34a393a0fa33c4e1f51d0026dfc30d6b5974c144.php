@@ -8,15 +8,11 @@
     <?php echo $__env->make('Site.Components.PageHeader', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php $__env->stopSection(); ?>
 
-<?php $__env->startSection('RegionNews'); ?>
+<?php $__env->startSection('PageBody'); ?>
     <?php echo $__env->make('Site.Components.RegionNews', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-<?php $__env->stopSection(); ?>
 
-<?php $__env->startSection('StreamNews'); ?>
     <?php echo $__env->make('Site.Components.StreamNews', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-<?php $__env->stopSection(); ?>
 
-<?php $__env->startSection('CategoryNews'); ?>
     <?php echo $__env->make('Site.Components.CategoryNews', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php $__env->stopSection(); ?>
 

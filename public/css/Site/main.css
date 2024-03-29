@@ -100,12 +100,15 @@
     padding-left: 6px;
     font-weight: 700;
     display: inline;
+    margin-bottom: 0;
     color: #000
 }
 
 .content1 .title p {
     display: inline;
     font-size: 13px;
+    margin-bottom: 0;
+    margin-left: 2.2px;
     color: #777
 }
 
@@ -162,15 +165,13 @@
     align-content: space-between
 }
 
-.content1 .ct #content1,
-.content1 .ct #content2 {
+.content1 .ct .content {
     width: 32%;
     height: 100%;
     margin-bottom: 25px
 }
 
-.content1 .ct #content1 p,
-.content1 .ct #content2 p {
+.content1 .ct .content p {
     line-height: 1.6em;
     width: 100%;
     display: inline;
@@ -178,14 +179,12 @@
     font-size: 14px
 }
 
-.content1 .ct #content1 img,
-.content1 .ct #content2 img {
+.content1 .ct .content img {
     width: 100%;
     height: 10em
 }
 
-.content1 .ct #content1 button,
-.content1 .ct #content2 button {
+.content1 .ct .content button {
     width: 3.5em;
     padding: 3px 0;
     color: #fff;
@@ -194,38 +193,7 @@
     background-color: #9ca7b7
 }
 
-.content1 .ct #content3,
-.content1 .ct #content4,
-.content1 .ct #content5,
-.content1 .ct #content6 {
-    width: 32%;
-    height: 100%;
-    margin-bottom: 25px
-}
-
-.content1 .ct #content3 p,
-.content1 .ct #content4 p,
-.content1 .ct #content5 p,
-.content1 .ct #content6 p {
-    line-height: 1.6em;
-    width: 100%;
-    display: inline;
-    font-weight: 700;
-    font-size: 14px
-}
-
-.content1 .ct #content3 img,
-.content1 .ct #content4 img,
-.content1 .ct #content5 img,
-.content1 .ct #content6 img {
-    width: 100%;
-    height: 10em
-}
-
-.content1 .ct #content3 #time,
-.content1 .ct #content4 #time,
-.content1 .ct #content5 #time,
-.content1 .ct #content6 #time {
+.content1 .ct .content #time {
     color: #777
 }
 
@@ -235,10 +203,7 @@
     padding-top: 30px
 }
 
-.content2 #content1,
-.content2 #content2,
-.content2 #content3,
-.content2 #content4 {
+.content2 .content {
     width: 100%;
     line-height: 1.6em;
     margin-bottom: 1.5em;
@@ -251,89 +216,56 @@
     border-top: 1px solid #ebebeb
 }
 
-.content2 #content1 .img,
-.content2 #content2 .img,
-.content2 #content3 .img,
-.content2 #content4 .img {
+.content2 .content .img {
     padding-top: 25px
 }
 
-.content2 #content1 .img a,
-.content2 #content2 .img a,
-.content2 #content3 .img a,
-.content2 #content4 .img a {
+.content2 .content .img a {
     text-decoration: none
 }
 
-.content2 #content1 .img a img,
-.content2 #content2 .img a img,
-.content2 #content3 .img a img,
-.content2 #content4 .img a img {
+.content2 .content .img a img {
     width: 16em;
     height: 9.8em
 }
 
-.content2 #content1 .ct,
-.content2 #content2 .ct,
-.content2 #content3 .ct,
-.content2 #content4 .ct {
+.content2 .content .ct {
     padding-top: 25px;
     width: 26.5em
 }
 
-.content2 #content1 .ct .title,
-.content2 #content2 .ct .title,
-.content2 #content3 .ct .title,
-.content2 #content4 .ct .title {
+.content2 .content .ct .title {
     margin-bottom: 10px;
     margin-top: -5px
 }
 
-.content2 #content1 .ct .title a,
-.content2 #content2 .ct .title a,
-.content2 #content3 .ct .title a,
-.content2 #content4 .ct .title a {
+.content2 .content .ct .title a {
     text-decoration: none
 }
 
-.content2 #content1 .ct .title a h3,
-.content2 #content2 .ct .title a h3,
-.content2 #content3 .ct .title a h3,
-.content2 #content4 .ct .title a h3 {
+.content2 .content .ct .title a h3 {
     font-weight: 700;
     font-size: 20px;
     color: #333
 }
 
-.content2 #content1 .ct .extra,
-.content2 #content2 .ct .extra,
-.content2 #content3 .ct .extra,
-.content2 #content4 .ct .extra {
+.content2 .content .ct .extra {
     margin-bottom: 13px
 }
 
-.content2 #content1 .ct .extra .theme,
-.content2 #content2 .ct .extra .theme,
-.content2 #content3 .ct .extra .theme,
-.content2 #content4 .ct .extra .theme {
+.content2 .content .ct .extra .theme {
     font-size: 14px;
     padding: 50px 0;
     font-weight: 700;
     color: #41445e
 }
 
-.content2 #content1 .ct .extra .time,
-.content2 #content2 .ct .extra .time,
-.content2 #content3 .ct .extra .time,
-.content2 #content4 .ct .extra .time {
+.content2 .content .ct .extra .time {
     font-size: 14px;
     color: #777
 }
 
-.content2 #content1 .ct .inf span,
-.content2 #content2 .ct .inf span,
-.content2 #content3 .ct .inf span,
-.content2 #content4 .ct .inf span {
+.content2 .content .ct .inf span {
     font-size: 13px
 }
 
@@ -678,6 +610,7 @@
     display: inline;
     font-size: 24px;
     line-height: 2em;
+    margin-bottom: 0;
     margin-left: 10px
 }
 
@@ -961,7 +894,7 @@
 #gallery7News .button .dots {
     position: relative;
     left: 40%;
-    margin-top: -10px;
+    margin-top: 10px;
     width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -998,6 +931,7 @@
     width: 100%;
     height: 10000px;
     margin-bottom: 1.5em;
+    padding: 0;
     list-style-type: none;
     -webkit-transition: background-color .6s ease-in-out;
     transition: background-color .6s ease-in-out
@@ -1005,7 +939,7 @@
 
 #galleryLatestNews #gallery7 li {
     width: 100%;
-    height: 156px;
+    height: 176px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1046,7 +980,7 @@
     color: #333;
     text-decoration: none;
     font-weight: 700;
-    font-size: 18.5px
+    font-size: 18px
 }
 
 #galleryLatestNews #gallery7 li .ct .extra {
@@ -1430,7 +1364,7 @@
     height: auto
 }
 
-.body-wrapper .bw-content .w1040 .bwc-left-wrapper .blw-category-news .box1 {
+.body-wrapper .bw-content .w1040 .bwc-left-wrapper .blw-category-news .boxLeft {
     position: relative;
     margin-bottom: 30px;
     width: 340px;
@@ -1438,22 +1372,7 @@
     margin-right: 20px
 }
 
-.body-wrapper .bw-content .w1040 .bwc-left-wrapper .blw-category-news .box2 {
-    position: relative;
-    margin-bottom: 30px;
-    width: 340px;
-    float: left
-}
-
-.body-wrapper .bw-content .w1040 .bwc-left-wrapper .blw-category-news .box3 {
-    position: relative;
-    margin-bottom: 30px;
-    width: 340px;
-    float: left;
-    margin-right: 20px
-}
-
-.body-wrapper .bw-content .w1040 .bwc-left-wrapper .blw-category-news .box4 {
+.body-wrapper .bw-content .w1040 .bwc-left-wrapper .blw-category-news .boxRight {
     position: relative;
     margin-bottom: 30px;
     width: 340px;
