@@ -7,7 +7,7 @@
             </div>
 
             <div class="content__main">
-                <img src="images\Admin\Posts\{{ $postWithCategoryStar[0]->post_image }}" alt="">
+                <img src="{{ asset('images/Admin/Posts/' . $postWithCategoryStar[0]->post_image) }}" alt="">
                 <a href="">
                     <h3>
                         {{ $postWithCategoryStar[0]->post_title }}
@@ -18,13 +18,15 @@
             <div class="content__extra">
                 <ul>
                     <li>
-                        <img src="images\Admin\Posts\{{ $postWithCategoryStar[1]->post_image }}" alt="">
+                        <img src="{{ asset('images/Admin/Posts/' . $postWithCategoryStar[1]->post_image) }}"
+                            alt="">
                         <h4>
                             {{ $postWithCategoryStar[1]->post_title }}
                         </h4>
                     </li>
                     <li>
-                        <img src="images\Admin\Posts\{{ $postWithCategoryStar[2]->post_image }}" alt="">
+                        <img src="{{ asset('images/Admin/Posts/' . $postWithCategoryStar[2]->post_image) }}"
+                            alt="">
                         <h4>
                             {{ $postWithCategoryStar[2]->post_title }}
                         </h4>

@@ -7,7 +7,7 @@
             <ul class="nav">
                 <li>
                     <a href="<?php echo e(route('site.home.index')); ?>">
-                        <div><img id="logo" src="images\Site\menu2\logoH.png" alt="">
+                        <div><img id="logo" src="<?php echo e(asset('images\Site\menu2\logoH.png')); ?>" alt="">
                         </div>
                     </a>
                 </li>
@@ -53,7 +53,7 @@
     <!-- top banner -->
 
     <div id="banner1">
-        <img src="images\Site\banner1\anh1.png" alt="">
+        <img src="<?php echo e(asset('images\Site\banner1\anh1.png')); ?>" alt="">
     </div>
 </div>
 <?php /**PATH C:\xampp\htdocs\WebBlog\resources\views/Site/Components/PageHeader.blade.php ENDPATH**/ ?>

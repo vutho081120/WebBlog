@@ -7,7 +7,7 @@
             <ul class="nav">
                 <li>
                     <a href="{{ route('site.home.index') }}">
-                        <div><img id="logo" src="images\Site\menu2\logoH.png" alt="">
+                        <div><img id="logo" src="{{ asset('images\Site\menu2\logoH.png') }}" alt="">
                         </div>
                     </a>
                 </li>
@@ -52,6 +52,6 @@
     <!-- top banner -->
 
     <div id="banner1">
-        <img src="images\Site\banner1\anh1.png" alt="">
+        <img src="{{ asset('images\Site\banner1\anh1.png') }}" alt="">
     </div>
 </div>

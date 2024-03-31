@@ -17,8 +17,7 @@
                 <ul>
                     <li>
                         <a href="">
-                            <span class="img"><img src=<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>
-
+                            <span class="img"><img src="<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>"
                                     alt=""></span>
                             <div>
                                 <span class="ct">Sóc Sơn: Cháy chợ lớn, 1000 mét vuông
@@ -29,8 +28,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="img"><img src=<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>
-
+                            <span class="img"><img src="<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>"
                                     alt=""></span>
                             <div>
                                 <span class="ct">Bảo Thi: Tiền thu nhạc chuông, nhạc chờ
@@ -41,8 +39,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="img"><img src=<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>
-
+                            <span class="img"><img src="<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>"
                                     alt=""></span>
                             <div>
                                 <span class="ct">Kim Woo Bin: đã bình phục trở lại sau 1
@@ -54,8 +51,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="img"><img src=<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>
-
+                            <span class="img"><img src="<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>"
                                     alt=""></span>
                             <div>
                                 <span class="ct">Khi vợ cấm xem Woldcup thì ...</span>
@@ -65,8 +61,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="img"><img src=<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>
-
+                            <span class="img"><img src="<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>"
                                     alt=""></span>
                             <div>
                                 <span class="ct">Hưng Yên: Hai cô gái tử vong trên cầu
@@ -77,8 +72,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="img"><img src=<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>
-
+                            <span class="img"><img src="<?php echo e(asset('images/Site/index/content/content5/anh1.png')); ?>"
                                     alt=""></span>
                             <div>
                                 <span class="ct">Đến hẹn lại lên, gà YG lại bị KBS "cấm
