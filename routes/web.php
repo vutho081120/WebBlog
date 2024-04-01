@@ -17,6 +17,7 @@ Route::get('/', function () {
     return redirect('home');
 });
 
+// Route Admin
 Route::group(['prefix' => 'admin', 'namespace' => 'App\Http\Controllers\Admin', 'middleware' => 'CheckLogin'], function () {
     Route::get('home', 'HomeController@index')->name('admin.home.index');
 
@@ -67,6 +68,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'App\Http\Controllers\Admin', 
     });
 });
 
+// Route Site
 Route::group(['namespace' => 'App\Http\Controllers\Site'], function () {
     Route::get('home', 'HomeController@index')->name('site.home.index');
 

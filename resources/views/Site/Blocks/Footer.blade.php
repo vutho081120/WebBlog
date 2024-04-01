@@ -2,15 +2,15 @@
 <div class="row">
     <div class="col-md-4">
         <a href="#" class="footer-logo">
-            <img src="logo.png" alt="Logo">
+            <img src="{{ asset('images/Site/logo.png') }}" alt="Logo">
         </a>
 
-        <p class="copyright">2024 - Your Company</p>
+        <p class="copyright">2024 - Blog</p>
     </div>
 
     <div class="col-md-6">
         <ul class="footer-menu">
-            <li><a href="#">Trang chủ</a></li>
+            <li><a href="{{ route('site.home.index') }}">Trang chủ</a></li>
             <li><a href="#">Giới thiệu</a></li>
             <li><a href="#">Dịch vụ</a></li>
             <li><a href="#">Liên hệ</a></li>
