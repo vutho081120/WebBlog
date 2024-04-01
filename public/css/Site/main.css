@@ -171,6 +171,11 @@
     margin-bottom: 25px
 }
 
+.content1 .ct .content a {
+    text-decoration: none;
+    color: #222
+}
+
 .content1 .ct .content p {
     line-height: 1.6em;
     width: 100%;
@@ -327,6 +332,10 @@
 .content3 .content__extra ul li img {
     width: 60px;
     height: 65px
+}
+
+.content3 .content__extra ul li a {
+    text-decoration: none;
 }
 
 .content3 .content__extra ul li h4 {
@@ -659,6 +668,7 @@
 
 #galleryCare .gallery li h4 a {
     font-size: 15px;
+    text-decoration: none;
     color: #333
 }
 
@@ -815,7 +825,8 @@
 }
 
 #gallery7News .gallery li h4 a {
-    font-size: 14.5px
+    font-size: 14.5px;
+    text-decoration: none;
 }
 
 #gallery7News .button #btn-next {
@@ -1294,6 +1305,11 @@
 
 .body-wrapper .bw-content .w1040 .bwc-left-wrapper .blw-news .bn-content {
     display: block
+}
+
+.body-wrapper .bw-content .w1040 .bwc-left-wrapper .post {
+    padding-bottom: 30px;
+    border-bottom: 3px solid #ff5e34
 }
 
 .body-wrapper .bw-content .w1040 .bwc-left-wrapper .blw-new-stream {

@@ -16,7 +16,7 @@
             <ul>
                 <?php $__currentLoopData = $postLatestTable; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <li>
-                        <a href="">
+                        <a href="<?php echo e(route('site.post.index', $post->post_slug)); ?>">
                             <span class="time"><?php echo e($post->created_at->format('H:i')); ?></span>
                             <span class="ct">
                                 <?php echo e($post->post_title); ?>

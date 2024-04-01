@@ -18,22 +18,30 @@
         <div class="ct">
             <?php $__currentLoopData = $postOutstanding; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="content">
-                    <img src="<?php echo e(asset('images/Admin/Posts/' . $post->post_image)); ?>" alt="">
-                    <p>
-                        <?php echo e($post->post_title); ?>
+                    <a href="<?php echo e(route('site.post.index', $post->post_slug)); ?>">
+                        <img src="<?php echo e(asset('images/Admin/Posts/' . $post->post_image)); ?>" alt="">
+                    </a>
+                    <a href="<?php echo e(route('site.post.index', $post->post_slug)); ?>">
+                        <p>
+                            <?php echo e($post->post_title); ?>
 
-                    </p>
+                        </p>
+                    </a>
                     <button>Nổi bật</button>
                 </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
             <?php $__currentLoopData = $postLists; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="content">
-                    <img src="<?php echo e(asset('images/Admin/Posts/' . $post->post_image)); ?>" alt="">
-                    <p>
-                        <?php echo e($post->post_title); ?>
+                    <a href="<?php echo e(route('site.post.index', $post->post_slug)); ?>">
+                        <img src="<?php echo e(asset('images/Admin/Posts/' . $post->post_image)); ?>" alt="">
+                    </a>
+                    <a href="<?php echo e(route('site.post.index', $post->post_slug)); ?>">
+                        <p>
+                            <?php echo e($post->post_title); ?>
 
-                    </p>
+                        </p>
+                    </a>
                     <p id="time"> - <?php echo e($post->created_at->diffForHumans()); ?></p>
                 </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

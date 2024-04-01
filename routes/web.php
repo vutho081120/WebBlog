@@ -72,6 +72,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Site'], function () {
 
     Route::get('category/{slug}', 'CategoryController@index')->name('site.category.index');
 
+    Route::get('post/{slug}', 'PostController@index')->name('site.post.index');
+
     Route::get('logout', 'AccountController@logout')->name('site.account.logout');
 
     Route::group(['middleware' => 'CheckAccount'], function () {

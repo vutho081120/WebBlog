@@ -14,8 +14,8 @@ class CategoryController extends Controller
         $categoryList = $category->getCategoryList();
 
         $post = new PostModel();
-        $postTopFocus = $post->getPostTopFocus();
-        $postLatest = $post->getLatestPosts();
+        $postTopFocus = $post->getPostTopFocusByCategorySlug($slug);
+        $postLatest = $post->getLatestPostByCategorySlug($slug);
 
         //dd($postLatest);
 

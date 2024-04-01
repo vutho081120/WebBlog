@@ -4,12 +4,13 @@
         @foreach ($postLists as $post)
             <div class="content">
                 <div class="img">
-                    <a href=""><img src="{{ asset('images/Admin/Posts/' . $post->post_image) }}" alt=""></a>
+                    <a href="{{ route('site.post.index', $post->post_slug) }}"><img
+                            src="{{ asset('images/Admin/Posts/' . $post->post_image) }}" alt=""></a>
                 </div>
 
                 <div class="ct">
                     <div class="title">
-                        <a href="">
+                        <a href="{{ route('site.post.index', $post->post_slug) }}">
                             <h3>
                                 {{ $post->post_title }}
                             </h3>

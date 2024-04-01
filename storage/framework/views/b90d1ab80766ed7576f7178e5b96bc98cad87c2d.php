@@ -12,7 +12,16 @@
     <link href="<?php echo e(asset('css/Admin/tabler-vendors.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('css/Admin/demo.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('css/Admin/main.css')); ?>" rel="stylesheet">
-    <?php echo $__env->yieldContent('AlertifyCss'); ?>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+
     
     <style>
         @import url('https://rsms.me/inter/inter.css');
@@ -61,6 +70,20 @@
     </div>
 
     <?php echo $__env->yieldContent('PageJS'); ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <script type="text/javascript">
+        <?php if(session('status')): ?>
+            alertify.set('notifier', 'position', 'top-right');
+            alertify.success("<?php echo e(session('status')); ?>");
+        <?php endif; ?>
+
+        <?php if(session('error')): ?>
+            alertify.set('notifier', 'position', 'top-right');
+            alertify.error("<?php echo e(session('error')); ?>");
+        <?php endif; ?>
+    </script>
 </body>
 
 </html>

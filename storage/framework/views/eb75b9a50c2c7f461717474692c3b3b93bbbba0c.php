@@ -4,12 +4,13 @@
         <?php $__currentLoopData = $postLists; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div class="content">
                 <div class="img">
-                    <a href=""><img src="<?php echo e(asset('images/Admin/Posts/' . $post->post_image)); ?>" alt=""></a>
+                    <a href="<?php echo e(route('site.post.index', $post->post_slug)); ?>"><img
+                            src="<?php echo e(asset('images/Admin/Posts/' . $post->post_image)); ?>" alt=""></a>
                 </div>
 
                 <div class="ct">
                     <div class="title">
-                        <a href="">
+                        <a href="<?php echo e(route('site.post.index', $post->post_slug)); ?>">
                             <h3>
                                 <?php echo e($post->post_title); ?>
 

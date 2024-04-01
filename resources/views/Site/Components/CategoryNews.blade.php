@@ -7,8 +7,10 @@
             </div>
 
             <div class="content__main">
-                <img src="{{ asset('images/Admin/Posts/' . $postWithCategoryStar[0]->post_image) }}" alt="">
-                <a href="">
+                <a href="{{ route('site.post.index', $postWithCategoryStar[0]->post_slug) }}">
+                    <img src="{{ asset('images/Admin/Posts/' . $postWithCategoryStar[0]->post_image) }}" alt="">
+                </a>
+                <a href="{{ route('site.post.index', $postWithCategoryStar[0]->post_slug) }}">
                     <h3>
                         {{ $postWithCategoryStar[0]->post_title }}
                     </h3>
@@ -18,18 +20,26 @@
             <div class="content__extra">
                 <ul>
                     <li>
-                        <img src="{{ asset('images/Admin/Posts/' . $postWithCategoryStar[1]->post_image) }}"
-                            alt="">
-                        <h4>
-                            {{ $postWithCategoryStar[1]->post_title }}
-                        </h4>
+                        <a href="{{ route('site.post.index', $postWithCategoryStar[1]->post_slug) }}">
+                            <img src="{{ asset('images/Admin/Posts/' . $postWithCategoryStar[1]->post_image) }}"
+                                alt="">
+                        </a>
+                        <a href="{{ route('site.post.index', $postWithCategoryStar[1]->post_slug) }}">
+                            <h4>
+                                {{ $postWithCategoryStar[1]->post_title }}
+                            </h4>
+                        </a>
                     </li>
                     <li>
-                        <img src="{{ asset('images/Admin/Posts/' . $postWithCategoryStar[2]->post_image) }}"
-                            alt="">
-                        <h4>
-                            {{ $postWithCategoryStar[2]->post_title }}
-                        </h4>
+                        <a href="{{ route('site.post.index', $postWithCategoryStar[2]->post_slug) }}">
+                            <img src="{{ asset('images/Admin/Posts/' . $postWithCategoryStar[2]->post_image) }}"
+                                alt="">
+                        </a>
+                        <a href="{{ route('site.post.index', $postWithCategoryStar[2]->post_slug) }}">
+                            <h4>
+                                {{ $postWithCategoryStar[2]->post_title }}
+                            </h4>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -45,8 +55,10 @@
             </div>
 
             <div class="content__main">
-                <img src="images\Admin\Posts\{{ $postWithCategoryMusik[0]->post_image }}" alt="">
-                <a href="">
+                <a href="{{ route('site.post.index', $postWithCategoryMusik[0]->post_slug) }}">
+                    <img src="images\Admin\Posts\{{ $postWithCategoryMusik[0]->post_image }}" alt="">
+                </a>
+                <a href="{{ route('site.post.index', $postWithCategoryMusik[0]->post_slug) }}">
                     <h3>
                         {{ $postWithCategoryMusik[0]->post_title }}
                     </h3>
@@ -56,16 +68,24 @@
             <div class="content__extra">
                 <ul>
                     <li>
-                        <img src="images\Admin\Posts\{{ $postWithCategoryMusik[1]->post_image }}" alt="">
-                        <h4>
-                            {{ $postWithCategoryMusik[1]->post_title }}
-                        </h4>
+                        <a href="{{ route('site.post.index', $postWithCategoryMusik[1]->post_slug) }}">
+                            <img src="images\Admin\Posts\{{ $postWithCategoryMusik[1]->post_image }}" alt="">
+                        </a>
+                        <a href="{{ route('site.post.index', $postWithCategoryMusik[1]->post_slug) }}">
+                            <h4>
+                                {{ $postWithCategoryMusik[1]->post_title }}
+                            </h4>
+                        </a>
                     </li>
                     <li>
-                        <img src="images\Admin\Posts\{{ $postWithCategoryMusik[2]->post_image }}" alt="">
-                        <h4>
-                            {{ $postWithCategoryMusik[2]->post_title }}
-                        </h4>
+                        <a href="{{ route('site.post.index', $postWithCategoryMusik[2]->post_slug) }}">
+                            <img src="images\Admin\Posts\{{ $postWithCategoryMusik[2]->post_image }}" alt="">
+                        </a>
+                        <a href="{{ route('site.post.index', $postWithCategoryMusik[2]->post_slug) }}">
+                            <h4>
+                                {{ $postWithCategoryMusik[2]->post_title }}
+                            </h4>
+                        </a>
                     </li>
                 </ul>
             </div>

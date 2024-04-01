@@ -5,8 +5,8 @@
             @foreach ($postLists as $post)
                 <li>
                     <div class="img">
-                        <a href=""><img src="{{ asset('images/Admin/Posts/' . $post->post_image) }}"
-                                alt=""></a>
+                        <a href="{{ route('site.post.index', $post->post_slug) }}"><img
+                                src="{{ asset('images/Admin/Posts/' . $post->post_image) }}" alt=""></a>
                     </div>
 
                     <div class="ct">
@@ -18,7 +18,7 @@
 
                         <div class="title2">
                             <p>
-                                <a href="">
+                                <a href="{{ route('site.post.index', $post->post_slug) }}">
                                     {{ $post->post_title }}
                                 </a>
                             </p>

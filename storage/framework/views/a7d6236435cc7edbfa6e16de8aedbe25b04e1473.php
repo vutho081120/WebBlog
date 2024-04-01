@@ -7,8 +7,10 @@
             </div>
 
             <div class="content__main">
-                <img src="<?php echo e(asset('images/Admin/Posts/' . $postWithCategoryStar[0]->post_image)); ?>" alt="">
-                <a href="">
+                <a href="<?php echo e(route('site.post.index', $postWithCategoryStar[0]->post_slug)); ?>">
+                    <img src="<?php echo e(asset('images/Admin/Posts/' . $postWithCategoryStar[0]->post_image)); ?>" alt="">
+                </a>
+                <a href="<?php echo e(route('site.post.index', $postWithCategoryStar[0]->post_slug)); ?>">
                     <h3>
                         <?php echo e($postWithCategoryStar[0]->post_title); ?>
 
@@ -19,20 +21,28 @@
             <div class="content__extra">
                 <ul>
                     <li>
-                        <img src="<?php echo e(asset('images/Admin/Posts/' . $postWithCategoryStar[1]->post_image)); ?>"
-                            alt="">
-                        <h4>
-                            <?php echo e($postWithCategoryStar[1]->post_title); ?>
+                        <a href="<?php echo e(route('site.post.index', $postWithCategoryStar[1]->post_slug)); ?>">
+                            <img src="<?php echo e(asset('images/Admin/Posts/' . $postWithCategoryStar[1]->post_image)); ?>"
+                                alt="">
+                        </a>
+                        <a href="<?php echo e(route('site.post.index', $postWithCategoryStar[1]->post_slug)); ?>">
+                            <h4>
+                                <?php echo e($postWithCategoryStar[1]->post_title); ?>
 
-                        </h4>
+                            </h4>
+                        </a>
                     </li>
                     <li>
-                        <img src="<?php echo e(asset('images/Admin/Posts/' . $postWithCategoryStar[2]->post_image)); ?>"
-                            alt="">
-                        <h4>
-                            <?php echo e($postWithCategoryStar[2]->post_title); ?>
+                        <a href="<?php echo e(route('site.post.index', $postWithCategoryStar[2]->post_slug)); ?>">
+                            <img src="<?php echo e(asset('images/Admin/Posts/' . $postWithCategoryStar[2]->post_image)); ?>"
+                                alt="">
+                        </a>
+                        <a href="<?php echo e(route('site.post.index', $postWithCategoryStar[2]->post_slug)); ?>">
+                            <h4>
+                                <?php echo e($postWithCategoryStar[2]->post_title); ?>
 
-                        </h4>
+                            </h4>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -48,8 +58,10 @@
             </div>
 
             <div class="content__main">
-                <img src="images\Admin\Posts\<?php echo e($postWithCategoryMusik[0]->post_image); ?>" alt="">
-                <a href="">
+                <a href="<?php echo e(route('site.post.index', $postWithCategoryMusik[0]->post_slug)); ?>">
+                    <img src="images\Admin\Posts\<?php echo e($postWithCategoryMusik[0]->post_image); ?>" alt="">
+                </a>
+                <a href="<?php echo e(route('site.post.index', $postWithCategoryMusik[0]->post_slug)); ?>">
                     <h3>
                         <?php echo e($postWithCategoryMusik[0]->post_title); ?>
 
@@ -60,18 +72,26 @@
             <div class="content__extra">
                 <ul>
                     <li>
-                        <img src="images\Admin\Posts\<?php echo e($postWithCategoryMusik[1]->post_image); ?>" alt="">
-                        <h4>
-                            <?php echo e($postWithCategoryMusik[1]->post_title); ?>
+                        <a href="<?php echo e(route('site.post.index', $postWithCategoryMusik[1]->post_slug)); ?>">
+                            <img src="images\Admin\Posts\<?php echo e($postWithCategoryMusik[1]->post_image); ?>" alt="">
+                        </a>
+                        <a href="<?php echo e(route('site.post.index', $postWithCategoryMusik[1]->post_slug)); ?>">
+                            <h4>
+                                <?php echo e($postWithCategoryMusik[1]->post_title); ?>
 
-                        </h4>
+                            </h4>
+                        </a>
                     </li>
                     <li>
-                        <img src="images\Admin\Posts\<?php echo e($postWithCategoryMusik[2]->post_image); ?>" alt="">
-                        <h4>
-                            <?php echo e($postWithCategoryMusik[2]->post_title); ?>
+                        <a href="<?php echo e(route('site.post.index', $postWithCategoryMusik[2]->post_slug)); ?>">
+                            <img src="images\Admin\Posts\<?php echo e($postWithCategoryMusik[2]->post_image); ?>" alt="">
+                        </a>
+                        <a href="<?php echo e(route('site.post.index', $postWithCategoryMusik[2]->post_slug)); ?>">
+                            <h4>
+                                <?php echo e($postWithCategoryMusik[2]->post_title); ?>
 
-                        </h4>
+                            </h4>
+                        </a>
                     </li>
                 </ul>
             </div>

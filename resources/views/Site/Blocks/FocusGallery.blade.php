@@ -9,9 +9,11 @@
         <ul class="gallery">
             @foreach ($postFocus as $post)
                 <li>
-                    <img src="{{ asset('images/Admin/Posts/' . $post->post_image) }}" alt="">
+                    <a href="{{ route('site.post.index', $post->post_slug) }}">
+                        <img src="{{ asset('images/Admin/Posts/' . $post->post_image) }}" alt="">
+                    </a>
                     <h4>
-                        <a>{{ $post->post_title }}</a>
+                        <a href="{{ route('site.post.index', $post->post_slug) }}">{{ $post->post_title }}</a>
                     </h4>
                 </li>
             @endforeach

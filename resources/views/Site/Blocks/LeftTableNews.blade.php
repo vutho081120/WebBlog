@@ -18,20 +18,28 @@
         <div class="ct">
             @foreach ($postOutstanding as $post)
                 <div class="content">
-                    <img src="{{ asset('images/Admin/Posts/' . $post->post_image) }}" alt="">
-                    <p>
-                        {{ $post->post_title }}
-                    </p>
+                    <a href="{{ route('site.post.index', $post->post_slug) }}">
+                        <img src="{{ asset('images/Admin/Posts/' . $post->post_image) }}" alt="">
+                    </a>
+                    <a href="{{ route('site.post.index', $post->post_slug) }}">
+                        <p>
+                            {{ $post->post_title }}
+                        </p>
+                    </a>
                     <button>Nổi bật</button>
                 </div>
             @endforeach
 
             @foreach ($postLists as $post)
                 <div class="content">
-                    <img src="{{ asset('images/Admin/Posts/' . $post->post_image) }}" alt="">
-                    <p>
-                        {{ $post->post_title }}
-                    </p>
+                    <a href="{{ route('site.post.index', $post->post_slug) }}">
+                        <img src="{{ asset('images/Admin/Posts/' . $post->post_image) }}" alt="">
+                    </a>
+                    <a href="{{ route('site.post.index', $post->post_slug) }}">
+                        <p>
+                            {{ $post->post_title }}
+                        </p>
+                    </a>
                     <p id="time"> - {{ $post->created_at->diffForHumans() }}</p>
                 </div>
             @endforeach

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 use App\Models\CategoryModel;
 use App\Models\PostModel;
 
@@ -48,6 +49,7 @@ class CategoryController extends Controller
             $newCategory = new CategoryModel();
 
             $newCategory->category_name = $request->categoryName;
+            $newCategory->category_slug = Str::slug($request->categoryName);
             $newCategory->category_status = $request->categoryStatus;
             $newCategory->user_id = Auth::user()->id;
 
@@ -86,6 +88,7 @@ class CategoryController extends Controller
         }
 
         $categoryItem->category_name = $request->categoryName;
+        $categoryItem->category_slug = Str::slug($request->categoryName);
         $categoryItem->category_status = $request->categoryStatus;
 
         $categoryItem->save();

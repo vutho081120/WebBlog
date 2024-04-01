@@ -40,12 +40,12 @@ class PostModel extends Model
 
     public function getPostTopFocus()
     {
-        return $this::select('id', 'post_title', 'post_image')->take(9)->get();
+        return $this::select('id', 'post_title', 'post_slug', 'post_image')->take(9)->get();
     }
 
     public function getLatestPosts()
     {
-        return $this::select('posts.id', 'posts.post_title', 'posts.post_image', 'posts.created_at', 'categories.category_name')
+        return $this::select('posts.id', 'posts.post_title', 'posts.post_slug', 'posts.post_image', 'posts.created_at', 'categories.category_name')
             ->join('categories', 'posts.category_id', '=', 'categories.id')
             ->latest()->limit(21)
             ->get();
@@ -53,14 +53,14 @@ class PostModel extends Model
 
     public function getPostWithCategory($id, $number)
     {
-        return $this::select('id', 'post_title', 'post_image', 'created_at')
+        return $this::select('id', 'post_title', 'post_slug', 'post_image', 'created_at')
             ->where('category_id', '=', $id)
             ->take($number)->get();
     }
 
     public function getLatestPostTable()
     {
-        return $this::select('posts.id', 'posts.post_title', 'posts.created_at')
+        return $this::select('posts.id', 'posts.post_title', 'posts.post_slug', 'posts.created_at')
             ->join('categories', 'posts.category_id', '=', 'categories.id')
             ->latest()->limit(10)
             ->get();
@@ -68,6 +68,31 @@ class PostModel extends Model
 
     public function getPostFocus()
     {
-        return $this::select('id', 'post_title', 'post_image')->take(5)->get();
+        return $this::select('id', 'post_title', 'post_slug', 'post_image')->take(5)->get();
+    }
+
+    public function getPostTopFocusByCategorySlug($slug)
+    {
+        return $this::select('posts.id', 'posts.post_title', 'posts.post_slug', 'posts.post_image')
+            ->join('categories', 'posts.category_id', '=', 'categories.id')
+            ->where('categories.category_slug', '=', $slug)
+            ->where('category_slug', '=', $slug)
+            ->take(9)->get();
+    }
+
+    public function getLatestPostByCategorySlug($slug)
+    {
+        return $this::select('posts.id', 'posts.post_title', 'posts.post_slug', 'posts.post_image', 'posts.created_at', 'categories.category_name')
+            ->join('categories', 'posts.category_id', '=', 'categories.id')
+            ->where('categories.category_slug', '=', $slug)
+            ->latest('posts.created_at')->limit(9)
+            ->get();
+    }
+
+    public function getPostBySlug($slug)
+    {
+        return $this::select('id', 'post_title', 'post_slug', 'post_content')
+            ->where('post_slug', '=', $slug)
+            ->first();
     }
 }

@@ -16,7 +16,7 @@
             <ul>
                 @foreach ($postLatestTable as $post)
                     <li>
-                        <a href="">
+                        <a href="{{ route('site.post.index', $post->post_slug) }}">
                             <span class="time">{{ $post->created_at->format('H:i') }}</span>
                             <span class="ct">
                                 {{ $post->post_title }}

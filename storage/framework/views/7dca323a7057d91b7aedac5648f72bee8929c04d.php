@@ -14,8 +14,7 @@
                             <label class="form-label required">Post title</label>
                             <div>
                                 <input type="text" class="form-control" aria-describedby="postTitleHelp"
-                                    name="postTitle" placeholder="Enter post title" value="<?php echo e($postItem->post_title); ?>"
-                                    disabled>
+                                    name="postTitle" placeholder="Enter post title" value="<?php echo e($postItem->post_title); ?>">
                             </div>
                         </div>
                         <div class="mb-3">

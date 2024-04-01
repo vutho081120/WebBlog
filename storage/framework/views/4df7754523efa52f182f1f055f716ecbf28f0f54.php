@@ -1,11 +1,13 @@
 <!-- Left Right Gallery -->
 <div class="slider" id="gallery7News">
     <ul class="gallery">
-        <?php $__currentLoopData = $postLists; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <?php $__currentLoopData = $postGalleryLists; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <li>
-                <img src="<?php echo e(asset('images/Admin/Posts/' . $post->post_image)); ?>" alt="">
+                <a href="<?php echo e(route('site.post.index', $post->post_slug)); ?>">
+                    <img src="<?php echo e(asset('images/Admin/Posts/' . $post->post_image)); ?>" alt="">
+                </a>
                 <h4>
-                    <a><?php echo e($post->post_title); ?></a>
+                    <a href="<?php echo e(route('site.post.index', $post->post_slug)); ?>"><?php echo e($post->post_title); ?></a>
                 </h4>
             </li>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

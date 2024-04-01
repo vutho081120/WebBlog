@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 use App\Models\PostModel;
 use App\Models\CategoryModel;
 
@@ -55,6 +56,7 @@ class PostController extends Controller
             $newPost = new PostModel();
 
             $newPost->post_title = $request->postTitle;
+            $newPost->post_slug = Str::slug($request->postTitle);
             $newPost->post_content = $request->postContent;
             $imgName = $request->postImage->getClientOriginalName();
             $request->postImage->move('images/Admin/Posts', $imgName);
@@ -85,9 +87,12 @@ class PostController extends Controller
         $postItem = $post->getPostById($id);
 
         $validator = Validator::make($request->all(), [
+            'postTitle' => 'required|min:3',
             'postContent' => 'required|min:3',
             'postImage' => 'mimes:jpeg,jpg,png,gif,svg,webp',
         ], [
+            'postTitle.required' => 'You have not entered your post title',
+            'postTitle.min' => 'Post title must be at least 3 characters long',
             'postContent.required' => 'You have not entered your post content',
             'postContent.min' => 'Post content must be at least 3 characters long',
             'postImage.mimes' => 'You have not selected an image file',
@@ -99,6 +104,7 @@ class PostController extends Controller
                 ->withInput();
         }
 
+        $postItem->post_slug = Str::slug($request->postTitle);
         $postItem->post_content = $request->postContent;
         if (isset($request->postImage)) {
             $imgName = $request->postImage->getClientOriginalName();
