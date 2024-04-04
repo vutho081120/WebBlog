@@ -18,7 +18,7 @@
                                 </svg>
                             </span>
                             <span class="nav-link-title">
-                                Home
+                                {{ __('Home') }}
                             </span>
                         </a>
                     </li>
@@ -44,7 +44,7 @@
                                     </svg>
                                 </span>
                                 <span class="nav-link-title">
-                                    Category
+                                    {{ __('Category') }}
                                 </span>
                             </a>
                         </li>
@@ -67,7 +67,7 @@
                                 </svg>
                             </span>
                             <span class="nav-link-title">
-                                Post
+                                {{ __('Post') }}
                             </span>
                         </a>
                     </li>
@@ -87,7 +87,7 @@
                                     </svg>
                                 </span>
                                 <span class="nav-link-title">
-                                    User
+                                    {{ __('User') }}
                                 </span>
                             </a>
                         </li>

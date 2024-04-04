@@ -12,15 +12,26 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">Danh mục</a>
+                    <a href="#">{{ __('Category') }}</a>
                     <ul class="sub-menu">
                         @foreach ($categoryList as $category)
                             <li>
                                 <a href="{{ route('site.category.index', Str::slug($category->category_name)) }}">
-                                    {{ $category->category_name }}
+                                    {{ __($category->category_name) }}
                                 </a>
                             </li>
                         @endforeach
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">{{ __('Language') }}</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="{{ route('change-language', 'en') }}">{{ __('English') }}</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('change-language', 'vi') }}">{{ __('Vietnam') }}</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -39,7 +50,7 @@
                             </svg>
                         </span>
                         <span class="nav-link-title">
-                            Login
+                            {{ __('Login') }}
                         </span>
                     </a>
                 </li>

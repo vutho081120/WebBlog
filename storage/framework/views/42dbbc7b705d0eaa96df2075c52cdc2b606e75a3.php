@@ -12,16 +12,27 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">Danh mục</a>
+                    <a href="#"><?php echo e(__('Category')); ?></a>
                     <ul class="sub-menu">
                         <?php $__currentLoopData = $categoryList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <li>
                                 <a href="<?php echo e(route('site.category.index', Str::slug($category->category_name))); ?>">
-                                    <?php echo e($category->category_name); ?>
+                                    <?php echo e(__($category->category_name)); ?>
 
                                 </a>
                             </li>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><?php echo e(__('Language')); ?></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="<?php echo e(route('change-language', 'en')); ?>"><?php echo e(__('English')); ?></a>
+                        </li>
+                        <li>
+                            <a href="<?php echo e(route('change-language', 'vi')); ?>"><?php echo e(__('Vietnam')); ?></a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -40,7 +51,8 @@
                             </svg>
                         </span>
                         <span class="nav-link-title">
-                            Login
+                            <?php echo e(__('Login')); ?>
+
                         </span>
                     </a>
                 </li>

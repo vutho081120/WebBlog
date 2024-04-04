@@ -18,7 +18,8 @@
                                 </svg>
                             </span>
                             <span class="nav-link-title">
-                                Home
+                                <?php echo e(__('Home')); ?>
+
                             </span>
                         </a>
                     </li>
@@ -44,7 +45,8 @@
                                     </svg>
                                 </span>
                                 <span class="nav-link-title">
-                                    Category
+                                    <?php echo e(__('Category')); ?>
+
                                 </span>
                             </a>
                         </li>
@@ -67,7 +69,8 @@
                                 </svg>
                             </span>
                             <span class="nav-link-title">
-                                Post
+                                <?php echo e(__('Post')); ?>
+
                             </span>
                         </a>
                     </li>
@@ -87,7 +90,8 @@
                                     </svg>
                                 </span>
                                 <span class="nav-link-title">
-                                    User
+                                    <?php echo e(__('User')); ?>
+
                                 </span>
                             </a>
                         </li>

@@ -17,10 +17,13 @@ Route::get('/', function () {
     return redirect('home');
 });
 
-// Route Admin
-Route::group(['prefix' => 'admin', 'namespace' => 'App\Http\Controllers\Admin', 'middleware' => 'CheckLogin'], function () {
-    Route::get('home', 'HomeController@index')->name('admin.home.index');
+Route::group(['namespace' => 'App\Http\Controllers'], function () {
+    Route::get('change-language/{language}', 'LangController@changeLang')->name('change-language');
+});
 
+// Route Admin
+Route::group(['prefix' => 'admin', 'namespace' => 'App\Http\Controllers\Admin', 'middleware' => 'CheckLogin', 'middleware' => 'Lang'], function () {
+    Route::get('home', 'HomeController@index')->name('admin.home.index');
 
     Route::group(['prefix' => 'post'], function () {
         Route::get('/', 'PostController@index')->name('admin.post.index');
@@ -69,7 +72,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'App\Http\Controllers\Admin', 
 });
 
 // Route Site
-Route::group(['namespace' => 'App\Http\Controllers\Site'], function () {
+Route::group(['namespace' => 'App\Http\Controllers\Site', 'middleware' => 'Lang'], function () {
     Route::get('home', 'HomeController@index')->name('site.home.index');
 
     Route::get('category/{slug}', 'CategoryController@index')->name('site.category.index');
