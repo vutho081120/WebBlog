@@ -1,5 +1,7 @@
 {
     "Category": "Category",
+    "category": "category",
+    "categories": "categories",
     "Musik": "Musik",
     "Star": "Star",
     "Cine": "Cine",
@@ -9,5 +11,14 @@
     "Login": "Login",
     "Home": "Home",
     "Post": "Post",
-    "User": "User"
+    "post": "post",
+    "posts": "posts",
+    "User": "User",
+    "user": "user",
+    "users": "users",
+    "Overview": "Overview",
+    "Dashboard": "Dashboard",
+    "Search": "Search",
+    "Add": "Add",
+    "of": "of"
 }

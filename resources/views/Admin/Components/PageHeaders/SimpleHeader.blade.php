@@ -4,10 +4,10 @@
         <div class="row align-items-center">
             <div class="col">
                 <div class="page-pretitle">
-                    Overview
+                    {{ __('Overview') }}
                 </div>
                 <h2 class="page-title">
-                    Dashboard
+                    {{ __('Dashboard') }}
                 </h2>
             </div>
         </div>

@@ -3,15 +3,16 @@
     <div class="container-xl">
         <div class="row align-items-center">
             <div class="col">
-                <h2 class="page-title">{{ $singular }}</h2>
-                <div class="text-secondary mt-1">1-12 of 241 {{ $plural }}</div>
+                <h2 class="page-title">{{ __($singular) }}</h2>
+                <div class="text-secondary mt-1">1-12 {{ __('of') }} 241 {{ __($plural) }}</div>
             </div>
             <div class="col-auto ms-auto d-print-none">
                 <div class="d-flex">
                     <div class="me-3 d-none d-md-block">
                         <form class="card" action="{{ route($routeSearch) }}" method="GET">
                             <div class="input-icon">
-                                <input type="text" class="form-control" placeholder="Search…" name="search" />
+                                <input type="text" class="form-control" placeholder="{{ __('Search') }}…"
+                                    name="search" />
                                 <span class="input-icon-addon">
                                     <!-- SVG icon from http://tabler-icons.io/i/search -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -35,7 +36,7 @@
                             <path d="M12 5l0 14" />
                             <path d="M5 12l14 0" />
                         </svg>
-                        Add {{ $singular }}
+                        {{ __('Add') }} {{ __($singular) }}
                     </a>
                 </div>
             </div>

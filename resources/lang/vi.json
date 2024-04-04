@@ -1,5 +1,7 @@
 {
     "Category": "Danh mục",
+    "category": "danh mục",
+    "categories": "danh mục",
     "Musik": "Âm nhạc",
     "Star": "Sao",
     "Cine": "Phim ảnh",
@@ -9,5 +11,14 @@
     "Login": "Đăng nhập",
     "Home": "Trang chủ",
     "Post": "Bài viết",
-    "User": "Người dùng"
+    "post": "bài viết",
+    "posts": "bài viết",
+    "User": "Người dùng",
+    "user": "người dùng",
+    "users": "người dùng",
+    "Overview": "Tổng quan",
+    "Dashboard": "Bảng điều khiển",
+    "Search": "Tìm kiếm",
+    "Add": "Thêm",
+    "of": "trong"
 }

@@ -4,17 +4,6 @@
     <title> Category Create </title>
 <?php $__env->stopSection(); ?>
 
-<?php $__env->startSection('AlertifyCss'); ?>
-    <!-- CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
-    <!-- Default theme -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
-    <!-- Semantic UI theme -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
-    <!-- Bootstrap theme -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
-<?php $__env->stopSection(); ?>
-
 <?php $__env->startSection('NavBar'); ?>
     <?php echo $__env->make('Admin.Components.PageMenus.NavBar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php $__env->stopSection(); ?>
@@ -43,20 +32,6 @@
     <!-- Tabler Core -->
     <script src="<?php echo e(asset('js/Admin/tabler.min.js')); ?>" defer></script>
     <script src="<?php echo e(asset('js/Admin/demo.min.js')); ?>" defer></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-
-    <script type="text/javascript">
-        <?php if(session('status')): ?>
-            alertify.set('notifier', 'position', 'top-right');
-            alertify.success("<?php echo e(session('status')); ?>");
-        <?php endif; ?>
-
-        <?php if(session('error')): ?>
-            alertify.set('notifier', 'position', 'top-right');
-            alertify.error("<?php echo e(session('error')); ?>");
-        <?php endif; ?>
-    </script>
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('Admin.layouts.SampleLayout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\WebBlog\resources\views/Admin/Pages/CategoryCreate.blade.php ENDPATH**/ ?>
