@@ -12,11 +12,15 @@ use App\Models\PostModel;
 
 class CategoryController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $category = new CategoryModel();
 
         $categoryList = $category->getAllCategories();
+
+        if ($request->ajax()) {
+            return view('Admin.Components.PageBodies.CategoryBody', compact('categoryList'));
+        }
 
         return view('Admin.Pages.Category', compact('categoryList'));
     }

@@ -11,10 +11,14 @@ use App\Models\CategoryModel;
 
 class PostController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $post = new PostModel();
         $postList = $post->getAllPosts();
+
+        if ($request->ajax()) {
+            return view('Admin.Components.PageBodies.PostBody', compact('postList'));
+        }
 
         return view('Admin.Pages.Post', compact('postList'));
     }

@@ -11,10 +11,14 @@ use App\Models\CategoryModel;
 
 class UserController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $user = new User();
         $userList = $user->getAllUsers();
+
+        if ($request->ajax()) {
+            return view('Admin.Components.PageBodies.UserBody', compact('userList'));
+        }
 
         return view('Admin.Pages.User', compact('userList'));
     }
